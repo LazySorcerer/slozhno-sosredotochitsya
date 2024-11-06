@@ -12,7 +12,17 @@
   --header__text-color: rgba(0, 0, 40, 1);
   --header__text-background-color: rgba(255, 0, 112, 1);
 
+  
+
   --background-image: url(../images/cover-image-dark.png);
 
+  --margin: 40px;
   --padding: 10px;
+  --gap: 10px;
+
+
+  --accent-color: rgba(255, 0, 112, 1);
+  --text-color : rgba(241, 178, 206, 1);
+  --text-size: 18px;
+  --font-weight: 700;
 }

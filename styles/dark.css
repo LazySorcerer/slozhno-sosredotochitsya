@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-dark {
+/* :root.theme-dark { */
   /* Дублируем переменные для тёмной темы */
   /* --header__title-color: rgba(219, 0, 255, 1);
   --header__title-shadow-color: rgba(255, 0, 112, 1);
@@ -12,7 +12,7 @@
   --header__text-background-color: rgba(255, 0, 112, 1);
 
   --background-image: url(../images/cover-image-dark.png); */
-}
+/* } */
 
 /* Остальные стили */
 
@@ -25,6 +25,9 @@
         --header__text-background-color: rgba(255, 0, 112, 1);
       
         --background-image: url(../images/cover-image-dark.png);
+
+        --accent-color: rgba(255, 0, 112, 1);
+        --text-color : rgba(241, 178, 206, 1);
     }
   }
 
@@ -41,5 +44,8 @@
   --header__text-background-color: rgba(255, 0, 112, 1);
 
   --background-image: url(../images/cover-image-dark.png);
+
+  --accent-color: rgba(255, 0, 112, 1);
+  --text-color : rgba(241, 178, 206, 1);
 }
 

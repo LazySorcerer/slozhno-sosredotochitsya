@@ -5,7 +5,7 @@
 */
 
 
-:root.theme-light {
+/* :root.theme-light { */
   /* Переменные светлой темы */   
   /* --header__title-color: rgba(255, 194, 230, 1);
   --header__title-shadow-color: rgba(255, 141, 203, 1);
@@ -13,7 +13,7 @@
   --header__text-background-color: rgba(255, 141, 203, 1);
 
   --background-image: url(../images/cover-image-light.png); */
-}
+/* }1 */
 
 /* Остальные стили */
 
@@ -26,6 +26,9 @@
       --header__text-background-color: rgba(255, 141, 203, 1);
     
       --background-image: url(../images/cover-image-light.png);
+
+      --accent-color: rgba(255, 141, 203, 1);
+      --text-color: rgba(53, 52, 48, 1);
   }
 }
 
@@ -44,6 +47,9 @@
   --header__text-background-color: rgba(255, 141, 203, 1);
 
   --background-image: url(../images/cover-image-light.png);
+
+  --accent-color: rgba(255, 141, 203, 1);
+  --text-color: rgba(53, 52, 48, 1);
 }
 
 
