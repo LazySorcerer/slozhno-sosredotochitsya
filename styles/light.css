@@ -1,23 +1,19 @@
 @media (prefers-color-scheme: light) {
   :root {
-    /* --header__title-color: rgba(255, 194, 230, 1);
-    --header__title-shadow-color: rgba(255, 141, 203, 1);
-    --header__text-color: rgba(53, 52, 48, 1);
-    --header__text-background-color: rgba(255, 141, 203, 1); */
-
     --background-image: url(../images/cover-image-light.png);
-
-    /* --accent-color: rgba(255, 141, 203, 1);
-    --text-color: rgba(53, 52, 48, 1);
-
-    --header__button-color: rgba(53, 52, 48, 1); */
-
-
 
     --title1-color: rgba(255, 194, 230, 1);
     --title3-color: rgba(53, 52, 48, 1);
     --accent-color: rgba(255, 141, 203, 1);
     --text-color : rgba(53, 52, 48, 1);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
+
+  .rec-lamp {
+    display: none;
   }
 }
 
@@ -26,25 +22,20 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  /* --header__title-color: rgba(255, 194, 230, 1);
-  --header__title-shadow-color: rgba(255, 141, 203, 1);
-  --header__text-color: rgba(53, 52, 48, 1);
-  --header__text-background-color: rgba(255, 141, 203, 1); */
-
   --background-image: url(../images/cover-image-light.png);
-
-  /* --accent-color: rgba(255, 141, 203, 1);
-  --text-color: rgba(53, 52, 48, 1);
-
-  --header__button-color: rgba(53, 52, 48, 1); */
-
-
-
 
   --title1-color: rgba(255, 194, 230, 1);
   --title3-color: rgba(53, 52, 48, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --text-color : rgba(53, 52, 48, 1);
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
+
+  .rec-lamp {
+    display: none;
+  }
 }
 
 

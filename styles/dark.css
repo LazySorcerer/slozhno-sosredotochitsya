@@ -1,24 +1,26 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --header__title-color: rgba(219, 0, 255, 1);
-    --header__title-shadow-color: rgba(255, 0, 112, 1);
-    --header__text-color: rgba(0, 0, 40, 1);
-    --header__text-background-color: rgba(255, 0, 112, 1); */
-     
     --background-image: url(../images/cover-image-dark.png);
-
-    /* --accent-color: rgba(255, 0, 112, 1);
-    --text-color : rgba(241, 178, 206, 1);
-
-    --header__button-color: var(--accent-color); */
-
-
-
 
     --title1-color: rgba(219, 0, 255, 1);
     --title3-color: rgba(0, 0, 40, 1);
     --accent-color: rgba(255, 0, 112, 1);
     --text-color : rgba(241, 178, 206, 1);
+  }
+
+  .header__theme-menu-button:hover,
+  .header__theme-menu-button_active,
+  .header__theme-menu-button:focus-visible,
+  .title3 {
+    --text-color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .rec-lamp {
+    display: block;
   }
 }
 
@@ -27,23 +29,26 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  /* --header__title-color: rgba(219, 0, 255, 1);
-  --header__title-shadow-color: rgba(255, 0, 112, 1);
-  --header__text-color: rgba(0, 0, 40, 1);
-  --header__text-background-color: rgba(255, 0, 112, 1); */
-
   --background-image: url(../images/cover-image-dark.png);
-
-  /* --accent-color: rgba(255, 0, 112, 1);
-  --text-color : rgba(241, 178, 206, 1);
-
-  --header__button-color: var(--accent-color); */
-
-
 
   --title1-color: rgba(219, 0, 255, 1);
   --title3-color: rgba(0, 0, 40, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --text-color : rgba(241, 178, 206, 1);
+
+  .header__theme-menu-button,
+  .header__theme-menu-button_active,
+  .header__theme-menu-button:focus-visible,
+  .title3 {
+    --text-color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .rec-lamp {
+    display: block;
+  }
 }
 
