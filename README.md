@@ -1,0 +1,1 @@
+https://github.com/LazySorcerer/slozhno-sosredotochitsya.git
