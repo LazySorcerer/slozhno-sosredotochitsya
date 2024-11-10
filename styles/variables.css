@@ -3,6 +3,7 @@
   --header__text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   
   --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
 
   --title1-color: rgba(219, 0, 255, 1);
   --title3-color: rgba(0, 0, 40, 1);

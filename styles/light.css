@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
+    --background-color: #fff1f7;
 
     --title1-color: rgba(255, 194, 230, 1);
     --title3-color: rgba(53, 52, 48, 1);
@@ -23,6 +24,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
 
   --title1-color: rgba(255, 194, 230, 1);
   --title3-color: rgba(53, 52, 48, 1);
