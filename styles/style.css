@@ -98,6 +98,10 @@
   background-color: transparent;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid var(--header__menu-color-hover);
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--header__menu-color);
   pointer-events: none;
@@ -108,7 +112,8 @@
   border-bottom: 1px solid var(--header__menu-color);
 }
 
-.header__title {
+.header__title,
+.footer__title {
   font-size: var(--header__text-size);
   font-weight: var(--font-weight);
   line-height: 0.84;
@@ -131,7 +136,8 @@
     margin-top: 191px;
   }
 
-  .header__title {
+  .header__title,
+  .footer__title {
     --header__text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -205,12 +211,13 @@
 
 .card-title {
   font-size: var(--text-size);
+  color: var(--card-title-color);
 }
 
 .title-decor {
   font-size: var(--text-size);
   font-weight: var(--font-weight);
-  color: var(--section-title-color);
+  color: var(--card-title-color);
   background-color: var(--accent-color);
 }
 

@@ -4,7 +4,8 @@
     --background-color: #fff1f7;
 
     --header__title-color: rgba(255, 194, 230, 1);
-    --section-title-color: rgba(53, 52, 48, 1);
+    --section-title-color: var(--card-title-color);
+    --card-title-color: rgba(53, 52, 48, 1);
     --accent-color: rgba(255, 141, 203, 1);
     --text-color : rgba(53, 52, 48, 1);
 
@@ -13,16 +14,8 @@
     --decorated-zone-color: var(--text-color);
   }
 
-  .header__theme-menu-button:hover {
-    border: 1px solid var(--header__menu-color-hover);
-  }
-
   .rec-lamp {
     display: none;
-  }
-
-  .section-title {
-    color: var(--section-title-color);
   }
 }
 
@@ -35,7 +28,8 @@
   --background-color: #fff1f7;
 
   --header__title-color: rgba(255, 194, 230, 1);
-  --section-title-color: rgba(53, 52, 48, 1);
+  --section-title-color: var(--card-title-color);
+  --card-title-color: rgba(53, 52, 48, 1);
   --accent-color: rgba(255, 141, 203, 1);
   --text-color : rgba(53, 52, 48, 1);
 
@@ -43,16 +37,8 @@
   --header__menu-color-hover: rgba(50, 49, 45, 0.4);
   --decorated-zone-color: var(--text-color);
 
-  .header__theme-menu-button:hover {
-    border: 1px solid var(--header__menu-color-hover);
-  }
-
   .rec-lamp {
     display: none;
-  }
-
-  .section-title {
-    color: var(--section-title-color);
   }
 }
 
