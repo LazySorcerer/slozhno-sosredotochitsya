@@ -16,7 +16,7 @@
   position: relative;
   width: 100%;
   min-height: 668px;
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
@@ -45,7 +45,7 @@
   right: -19px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 700px) {
   .rec-lamp {
     top: 12px;
     right: 38px;
@@ -57,8 +57,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--decorated-zone-color);
+  border-bottom: 1px solid var(--decorated-zone-color);
   left: var(--padding);
   bottom: var(--padding);
 }
@@ -68,8 +68,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decorated-zone-color);
+  border-right: 1px solid var(--decorated-zone-color);
   top: var(--padding);
   right: var(--padding);
 }
@@ -92,40 +92,36 @@
 
   font-size: var(--text-size);
   text-transform: lowercase;
-  color: var(--text-color);
+  color: var(--header__menu-color);
   padding: 0;
   border: 1px solid transparent;
   background-color: transparent;
 }
 
-.header__theme-menu-button:hover {
-  border: 1px solid var(--text-color);
-}
-
 .header__theme-menu-button_active {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--header__menu-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:focus-visible {
   outline: transparent;
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--header__menu-color);
 }
 
-.title1 {
+.header__title {
   font-size: var(--header__text-size);
   font-weight: var(--font-weight);
   line-height: 0.84;
-  color: var(--title1-color);
+  color: var(--header__title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-.header .title4 {
+.header .header__small-title {
   align-self: flex-start;
   margin-top: 40px;
 }
 
-@media (width > 376px) {
+@media (width > 700px) {
   .header {
     --padding: 20px;
   }
@@ -135,16 +131,16 @@
     margin-top: 191px;
   }
 
-  .title1 {
+  .header__title {
     --header__text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .header .title1 {
+  .header .header__title {
     position: relative;
     left: -20px;
   }
 
-  .header .title4 {
+  .header .header__small-title {
     width: 50%;
     justify-self: right;
     align-self: start;
@@ -160,7 +156,7 @@
   }
 }
 
-@media (376px < width < 1024px) {
+@media (700px < width < 1024px) {
   .header {
     min-height: 1024px;
   }
@@ -182,7 +178,7 @@
     grid-template-columns: auto auto auto;
   }
 
-  .header .title4 {
+  .header .header__small-title {
     margin-top: 50px;
   }
 }
@@ -202,22 +198,19 @@
   padding-right: var(--padding);
 }
 
-.title3 {
+.section-title {
   font-size: var(--text-size);
-  color: var(--text-color);
+  color: var(--section-title-color);
 }
 
-.title4 {
+.card-title {
   font-size: var(--text-size);
-}
-
-.section3 .title4:first-child {
-  --font-weight: 400;
 }
 
 .title-decor {
+  font-size: var(--text-size);
   font-weight: var(--font-weight);
-  color: var(--title3-color);
+  color: var(--section-title-color);
   background-color: var(--accent-color);
 }
 
@@ -233,9 +226,9 @@
   margin-top: 10px;
 }
 
-.section1,
-.section2,
-.section3,
+.content-why,
+.content-what,
+.content-how,
 .pics-section {
   display: grid;
   grid-auto-flow: row;
@@ -243,8 +236,22 @@
   gap: var(--gap);
 }
 
+.content-cards {
+  display: grid;
+  gap: var(--gap);
+}
+
+.content-how .card .card-title:first-child {
+  --font-weight: 400;
+}
+
 .pics-section {
   --gap: 10px;
+  gap: var(--gap);
+}
+
+.pics-section .pics-section-title {
+  font-size: var(--text-size);
 }
 
 .link {
@@ -253,13 +260,13 @@
   text-decoration: none;
 }
 
-.link:hover {
-  border-bottom: 2px solid var(--text-color);
+.link:focus-visible {
+  outline: var(--text-color) solid 1px;
 }
 
-.link:focus-visible {
-  outline: var(--text-color) solid 2px;
-  outline-offset: 2px;
+.link:hover {
+  border-bottom: 1px solid var(--text-color);
+  outline: none;
 }
 
 .pics {
@@ -268,7 +275,7 @@
   object-fit: cover;
 }
 
-@media (376px < width) {
+@media (700px < width) {
   .main {
     --margin: 60px;
     --padding: 20px;
@@ -276,40 +283,14 @@
     gap: var(--gap);
   }
 
-  .section1 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+  .content-why,
+  .content-how {
+    grid-template-columns: 1fr 2fr;
     --gap: 20px;
   }
 
-  .section1 .title3 {
-    grid-row: span 2;
-  }
-
-  .section1 .card {
-    grid-column: span 2;
-  }
-
-  .section2 {
-    --gap: 20px;
-  }
-  
-  .section2 .title3 {
+  .content-what .section-title{
     width: 30%;
-  }
-
-  .section3 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    --gap: 20px;
-  }
-
-  .section3 .title3 {
-    grid-row: span 6;
-  }
-
-  .section3 .card {
-    grid-column: span 2;
   }
 
   .pics-section {
@@ -318,7 +299,7 @@
     --gap: 20px;
   }
 
-  .pics-section .title4 {
+  .pics-section .pics-section-title {
     grid-column: span 3;
   }
 
@@ -333,26 +314,18 @@
   }
 }
 
-@media (376px < width < 1024px) {
-  .section1 .card {
-    margin-left: 7px;
-  }
-
-  .section3 .card {
-    margin-left: 7px;
-  }
-}
-
 @media (width >= 1024px) {
-  .section2 {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+  .content-why,
+  .content-how {
+    --gap: 10px;
+  }
+
+  .content-cards {
     --gap: 20px;
   }
 
-  .section2 .title3 {
-    grid-column: span 3;
-    width: 30%;
+  .content-what .content-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -361,24 +334,24 @@
 .footer {
   position: relative;
   min-height: 668px;
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: var(--margin);
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.footer .title1 {
+.footer .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
-@media (376px < width) {
+@media (700px < width) {
   .footer {
     --margin: 60px;
   }
 }
 
-@media (376px < width < 1024px) {
+@media (700px < width < 1024px) {
   .footer {
     min-height: 1024px;
   }

@@ -5,10 +5,14 @@
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
 
-  --title1-color: rgba(219, 0, 255, 1);
-  --title3-color: rgba(0, 0, 40, 1);
+  --header__title-color: rgba(219, 0, 255, 1);
+  --section-title-color: rgba(0, 0, 40, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --text-color : rgba(241, 178, 206, 1);
+
+  --header__menu-color: var(--accent-color);
+  --header__menu-color-hover: rgba(255, 0, 112, 0.4);
+  --decorated-zone-color: var(--accent-color);
 
   --margin: 40px;
   --padding: 10px;
